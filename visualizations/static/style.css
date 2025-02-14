@@ -1,0 +1,539 @@
+
+html{
+    margin: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+
+    background-color: #f7f5f5fb;
+    margin: 0;
+    font-family: sans-serif;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+    overflow-x:hidden;
+}
+
+
+@media (max-width: 1080px) {
+
+
+    body{
+        overflow-x:hidden;
+        background-color: #F7F7F7;
+    }
+
+    header{
+        align-items: center;
+        justify-content: center;
+        display: grid;
+        margin:0px 0px 0px 0px !important;
+        padding: 0px 0px 0px 0px;
+    }
+
+    header h1 {
+        font-size: 40px !important; /* Forces smaller text */
+        text-align: center;
+        padding: 10px 0;
+        margin-bottom: 20px;
+    }
+    
+    header h4{
+        font-size: 15px !important;
+        margin-left:30px;
+        margin-right:30px;
+        text-align: center;
+    }
+
+
+    .b1{
+        margin: 0px 20px 0px 20px;
+    }
+
+    .hero {
+        display: grid !important;
+        grid-template-columns: auto !important; 
+        align-items: center;  
+        text-align: center;
+        margin: 0px 10px 30px 10px !important;
+        gap: 30px;
+        padding: 0;
+    }
+    
+    .description{
+        margin: 10px 15px 0 15px !important;
+        padding: 0;
+        text-align: justify;
+    }
+
+    .grf1 {
+        padding: 0;
+        margin: 0;
+    }
+
+
+    .hero-2{
+        display: grid !important;
+        grid-template-columns: auto !important;
+        align-items: center;
+        text-decoration-line: center;
+        margin: 0px 10px 30px 10px !important;
+        gap: 20px;
+    }
+
+
+    .coffee-types{
+        margin: 10px 40px 0 35px !important;
+        padding: 0;
+        text-align: justify;
+        
+    
+    }
+    
+    
+    .coffee-types ul{
+        margin-top: 50px;
+        margin: 50px 0 0 0;
+        list-style: none;
+        padding: 0 0 0 0;
+    }
+    
+    .coffee-types li{
+        display: flex;
+        gap: 10px;
+        margin: 0 0 0 0;
+    }
+    
+
+    .hero-3{
+        display: grid !important;
+        grid-template-columns: auto !important;
+        align-items: center;
+        text-decoration-line: center;
+        margin: 80px 10px 30px 10px !important;
+        gap: 20px !important;
+    }
+
+    .hero-4{
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        margin: 80px 15px 30px 15px !important;
+        gap: 20px;
+    }
+
+    .hero-4 h1{
+        text-align: center;
+    }
+
+    
+    .ml-description p{
+        text-align: justify;
+    }
+
+    .hero-5 {
+        display: grid !important;
+        grid-template-columns: auto !important;
+        margin: 0px 10px 30px 10px !important;
+        gap: 20px !important;
+
+    }
+
+    .final-hero{
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        margin: 80px 15px 30px 15px !important;
+        gap: 20px;
+    }
+
+}
+
+
+
+@media (max-width: 480px) {
+
+
+    body{
+        overflow-x:hidden;
+        background-color: #F7F7F7;
+    }
+
+    header{
+        align-items: center;
+        justify-content: center;
+        display: grid;
+        margin:0px 0px 0px 0px !important;
+        padding: 0px 0px 0px 0px;
+    }
+
+    header h1 {
+        font-size: 40px !important; /* Forces smaller text */
+        text-align: center;
+        padding: 10px 0;
+        margin-bottom: 20px;
+    }
+    
+    header h4{
+        font-size: 15px !important;
+        margin-left:30px;
+        margin-right:30px;
+        text-align: center;
+    }
+
+
+    .b1{
+        margin: 0px 20px 0px 20px;
+    }
+
+    .hero {
+        display: grid !important;
+        grid-template-columns: auto !important; 
+        align-items: center;  
+        text-align: center;
+        margin: 0px 10px 30px 10px !important;
+        gap: 30px;
+        padding: 0;
+    }
+    
+    .description{
+        margin: 10px 15px 0 15px !important;
+        padding: 0;
+        text-align: justify;
+    }
+
+    .grf1 {
+        padding: 0;
+        margin: 0;
+    }
+
+
+    .coffee-types{
+        margin: 10px 40px 0 35px !important;
+        padding: 0;
+        text-align: justify;
+        
+    
+    }
+    
+    
+    .coffee-types ul{
+        margin-top: 50px;
+        margin: 50px 0 0 0;
+        list-style: none;
+        padding: 0 0 0 0;
+    }
+    
+    .coffee-types li{
+        display: flex;
+        gap: 10px;
+        margin: 0 0 0 0;
+    }
+
+
+    .hero-2{
+        display: grid !important;
+        grid-template-columns: auto !important;
+        align-items: center;
+        text-decoration-line: center;
+        margin: 0px 10px 30px 10px !important;
+        gap: 20px;
+    }
+
+    .hero-3{
+        display: grid !important;
+        grid-template-columns: auto !important;
+        align-items: center;
+        text-decoration-line: center;
+        margin: 80px 10px 30px 10px !important;
+        gap: 20px !important;
+    }
+
+    .hero-4{
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        margin: 80px 15px 30px 15px !important;
+        gap: 20px;
+    }
+
+    .hero-4 h1{
+        text-align: center;
+    }
+
+    
+    .ml-description p{
+        text-align: justify;
+    }
+
+    .hero-5 {
+        display: grid !important;
+        grid-template-columns: auto !important;
+        margin: 0px 10px 30px 10px !important;
+        gap: 20px !important;
+
+    }
+
+    .final-hero{
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        margin: 80px 15px 30px 15px !important;
+        gap: 20px;
+    }
+
+}
+
+header {
+    background-color: #222222;
+    margin: 0 0 0px 0;
+    padding: 0 0 50px 0;
+    display: grid; 
+    justify-content: center;
+}
+
+.b1 {
+    display: flex;
+    margin: 0px 20px 70px 20px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.b1 button{
+    border-radius: 10px;
+    padding: 10px 5px 10px 5px;
+    background-color: #222222;
+    color: #F7F7F7;
+    
+}
+
+.b1 button:hover{
+    cursor: pointer;
+    background-color: #414040;
+}
+
+.header-button{
+    padding: 5px 2px 5px 2px;
+    margin: 0px 0px 0px 0px;
+}
+
+.header-img{
+    display: flex;
+    align-items: center;
+    padding: 30px 0 0 0;
+    margin: 0;
+    justify-content:space-evenly;
+}
+
+header h1{
+    font-family: 'Rubik',serif;
+    color: #FFFFFF;
+    margin: 30px 0 20px 0;
+    padding: 0;
+    font-size: 50px;
+}
+
+header h4{
+    color: #FFFFFF;
+    margin: 10 0 10 0;
+    padding: 0;
+    justify-self: center;
+    font-size: 20px;
+}
+
+
+
+.hero {
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    margin: 100px 20px 70px 20px;
+}
+
+.description{
+    margin: 60px 20px 0 10px;
+    text-align:left;
+}
+
+.description p{
+    line-height: 1.5;
+    font-family: 'Rubik',serif;  
+}
+
+.description h1{
+    font-family: 'Rubik',serif;
+}
+
+.grf1{
+    margin: 0 0 30px 0px;
+    box-shadow: 0 10px 6px 0 rgba(0, 0, 0, 0.18);
+    border-radius: 9px;
+    
+
+}
+
+.grf1 p{
+    margin: 8px 10px 5px 10px;
+    
+    justify-self: center;
+}
+
+.grf2{
+    margin: 0 0 30px 0px;
+    box-shadow: 5px 10px 6px 0 rgba(0, 0, 0, 0.18);
+    border-radius: 9px;
+}
+
+
+.divider {
+    width: 100%;  
+    height: 1px;  
+    background-color:#22222236;
+    margin: 20px auto;  
+}
+
+.hero-2{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    margin: 100px 20px 30px 20px;
+}
+
+.coffee-types{
+    margin: 10px 40px 0 35px !important;
+    padding: 0;
+    text-align: justify;
+    
+
+}
+
+
+.coffee-types ul{
+    margin-top: 50px;
+
+    list-style: none;
+}
+
+.coffee-types li{
+    display: flex;
+    gap: 10px;
+}
+
+.hero-3{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    margin: 100px 20px 30px 20px;
+    gap: 10px;
+    
+
+}
+
+.grf3{
+    margin: 0 0 30px 5px;
+    box-shadow: 0 10px 6px 0 rgba(0, 0, 0, 0.18);
+    border-radius: 10px;
+    
+}
+
+.grf3 p{
+    margin: 8px 10px 5px 10px;
+    justify-self: center;
+    text-align: center;
+}
+
+.grf4{
+    margin: 0 5px 30px 0px;
+    box-shadow: 0 10px 6px 0 rgba(0, 0, 0, 0.18);
+    border-radius: 10px;
+    
+}
+
+.grf4 p{
+    margin: 8px 10px 5px 10px;
+    justify-self: center;
+    text-align: center;
+}
+
+
+.hero-4{
+    display: flex;
+    flex-direction: column;
+    margin: 100px 120px 30px 120px;
+    gap: 5px;
+    align-items: center !important;
+    
+}
+
+.hero-4 h1{
+    align-self: center;
+}
+
+.ml-description{
+    text-justify: inter-ideograph;
+}
+
+.hero-5 {
+
+    display: grid;
+    grid-template-columns: repeat(2,50%) ;
+    margin: 50px 20px 100px 20px;
+    gap: 10px;
+}
+
+.grf5{
+    margin: 0 5px 30px 0px;
+    box-shadow: 0 10px 6px 0 rgba(0, 0, 0, 0.18);
+    border-radius: 10px;
+}
+
+.grf6{
+    margin: 0 5px 30px 0px;
+    box-shadow: 0 10px 6px 0px rgba(0, 0, 0, 0.18);
+    border-radius: 10px;
+}
+
+.grf5 p{
+    margin: 8px 10px 5px 10px;
+}
+
+.grf6 p{
+    margin: 8px 10px 5px 10px;
+}
+
+.final-hero{
+    display: flex;
+    flex-direction: column;
+    margin: 100px 120px 30px 120px;
+    gap: 5px;
+    align-items: center !important;
+    
+}
+
+footer{
+    margin:100px 0 0 0;
+    padding:15px 0 0 0;
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+
+}
+
+.socials{
+    margin: 0;
+    padding: 0;
+    justify-self: space-evenly;
+    gap:15px;
+}
+
+.github:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+
+.linkedin:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}

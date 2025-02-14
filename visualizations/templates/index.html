@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Colombian Coffee Exports</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <link href="https://fonts.googleapis.com/css2?family==Rufina:wght@400;700display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <header>
+    <div class="header-img">
+        <img src="static/colombia.png" alt="" style="height: 100px; width: 100px; padding: 0; margin: 0;">
+        <p style="font-size: 60px; padding: 0; margin: 0;">☕</p>
+    </div>
+    <h1>Colombian Coffee Exports</h1>
+    <h4>Visualization of Colombian Coffee exportations 2017-2025</h4>
+    </header>
+    <div class="b1">
+        <p>Last Update: <strong>{{ last_update }}</strong></p>
+        <a href="/download"><button>Download Data</button></a>
+    </div>
+    <div class="hero">
+    <div class="description">
+        <h1 style="color: #222222; margin-top: 0; font-family: Rubik', serif; font-weight:300px;">From Colombia to the world!</h1>
+        <p>Humans love coffee at least the coolest ones do. You probably wake up every day, and one of the first things you do automatically is prepare a good cup of coffee.
+             You may not care about the story behind it or what kind it is as long as it gives you that caffeine hit you need, you're good to go.
+             But if you're as curious as I am, you might have wondered: <strong>Where does this coffee come from? Which countries consume the most coffee? What type of coffee is the best-selling?</strong></p>
+        <p>The purpose of this page is to illustrate statistics on <strong>Colombian coffee exports.</strong><br> 
+        The source of this data is directly from the <a href="https://federaciondecafeteros.org/wp/estadisticas-cafeteras/"style="color: #FF0000CB; text-decoration:none; font-weightl:bold;" target="_blank">
+         National Federation of Coffee Growers of Colombia.
+     </a> 
+        These visualizations aim to provide a more detailed insight into international trade patterns.</p>
+    </div>
+        
+    <div class="grf1">{{ graph_html1 | safe }}<p>Colombia is the <strong>third-largest</strong> coffee exporter in the world, 
+        accounting for 8% of global exports.</p></div>
+    </div>
+    <div class="divider"></div>
+    <div class="hero-2">
+        <div class="grf2">{{ graph_html2 | safe }}</div>
+        <div class="coffee-types">
+            <p>There are many different types of coffee beans and products made from them. Here, we’re focusing only on the top exported coffee products.</p>
+            <ul>
+            <li><img src="{{ url_for('static', filename='greencoffee.png') }}" alt="" width="50px" height="50px"style="filter: hue-rotate(120deg);">
+                 <p><strong style="color:green;">Green coffee</strong> refers to the raw seeds of coffee cherries that have been separated, 
+                    or "processed," but not yet roasted. These beans develop their intense aroma, acidity, body, and flavor during the roasting process. This is the one you probably drink
+                at Starbucks.</p></li>
+            <li><img src="{{ url_for('static', filename='soluble.png') }}" alt="" width="50px" height="50px"><p><strong style="color:red">Soluble</strong> Also known as instant coffee, 
+                is coffee that has been brewed then de-hydrated, easily dissolved. Not my favorite.</p></li>
+            <li><img src="{{ url_for('static', filename='greencoffee.png') }}" alt="" width="50px" height="50px"><p><strong style="color: rgb(56, 56, 228);">Roasted Coffee</strong> 
+            It's just raw green coffee beans dropped into loaders and then into a rotating drum. The drum is pre-heated to a temperature of 240 degrees.</p></li>
+            <li><img src="{{ url_for('static', filename='coffee-cup.png') }}" alt="" width="50px" height="50px" alt=""><p><strong style="color:purple ;">Extracts</strong>
+                Is a product of using coffee beans and alcohol to create a concentrated coffee flavoring that can be used in baked goods, ice cream and cocktails.</p></li>
+        </ul>
+        </div>
+    </div>
+    <div class="divider"></div>
+    <div class="hero-3">
+        <div class="grf3">{{ graph_html3 | safe }} <p>United States is by far the country who import most coffee from Colombia. In 2023, Colombia led with <strong><a target="_blank" href="https://www.trade.gov/data-visualization/tradestats-express-us-trade-product">$1.35 billion</a></strong> worth of coffee exported to the US. Info here</p></div>
+        <div class="grf4">{{ graph_html4 | safe }} <p>Coffee exports have fluctuated over the years, showing no strong upward or downward trend, but rather seasonal variations. Export volumes mostly range between 800K and 1.4M bags.</p></div>
+    </div>
+    <div class="divider"></div>
+    <div class="hero-4">\
+        <p style="font-size: 60px; padding: 0; margin: 0px;">🤖☕📈</p>
+        <h1>Machine Learning Application</h1>
+        <div class="ml-description"><p>I like coffee, but I also enjoy math and discovering interesting insights hidden in data. In this case,
+             I want to apply a few machine learning concepts to predict future trends and detect outliers in coffee exports.
+             <br>
+             <br>
+             Machine Learning (ML) is a branch of artificial intelligence (AI) that enables computers to learn patterns from data and make predictions or decisions without being explicitly programmed.</p>
+            <p><strong>Time forecasting</strong> is used to predict future values based on past data trends. The mathematics behind it relies on statistical and machine learning models.</p>
+            <p>For <strong>anomaly detection</strong>, we will identify unexpected spikes or drops in coffee exports. To achieve this, we'll use Isolation Forest,
+                 a machine learning model designed to detect outliers (anomalies) in time-series data.
+
+            </p>
+        </div>
+    </div>
+    <div class="hero-5">
+        <div class="grf5">{{ graph_html5 | safe }} <p>The latest data we have is from December 2024, and we want to predict coffee exports for the next five months. 
+            <br>
+            <br>
+            The error percentage between the <strong>forecasted value (964,207)</strong> and the <a href="https://www.larepublica.co/economia/la-produccion-de-cafe-subio-26-el-ano-pasado-y-precio-sigue-en-maximos-historicos-4057667#:~:text=En%20cuanto%20a%20las%20exportaciones,17%25%20m%C3%A1s%20que%20en%202023."><strong>actual value (1,150,000)</strong></a> for January 2025 is approximately 16.16%.
+            Our prediction isn’t too bad, but it could be significantly better.
+            <br>
+            <br>
+             There are external factors that this model does not account for, such as demand, policies, weather conditions, and global trade dynamics.</p></div>
+        <div class="grf6">{{ graph_html6 | safe }} <p>Anomaly detection helps us identify outliers. The most obvious one, just by looking at the graph,
+             is the export volume in May 2021, with only <strong>(345.017)</strong> bags exported.</p>
+             <br>
+             <p>This represents a <strong>52%</strong> decrease compared to the amount exported just one month earlier.
+                 This drop occurred due to road blockades across the country as part of the National Strike, which lasted for over a month.</p>
+            </div>
+    </div>
+    <div class="final-hero"><p>This project also aims to showcase how an ETL data pipeline works, along with the technologies and methodologies behind it.
+        If you're interested in the nerdy details, you can read more by clicking <a href=""style="color:red; font-weight:bold;">here!</a></p>
+        <p style="text-align: center;">Preliminary figures correspond to the provisional declared value in the export declaration. The FNC (NFC) publishes these figures for illustrative purposes and they should not be understood as an official source for the value of coffee exports.
+             The official source is the consolidated and final figures regularly published by the DIAN.</p>
+    </div>
+    <footer>
+        <div class="socials">
+            <a href="https://github.com/lVarol"><img class="github" src="{{ url_for('static', filename='github.png')}}" alt="Github" style="filter: invert(100%); margin: 0 10px 0 10px;" width="38" height="38" ></a>
+            <a href="https://www.linkedin.com/in/%C3%A1lvaro-jos%C3%A9-pineda-51a473349/"><img class="linkedin" src="{{ url_for('static', filename='linkedin.png')}}" alt="Linkeding" style="filter: invert(100%); margin: 0 15px 0 10px;"  width="38" height="38"></a>
+        </div>
+        <p style="color: #ffffffb2; margin: 8px 0 8px 0;">Copyright© 2025 Álvaro Pineda</p>
+    </footer>
+</body>
+</html>
