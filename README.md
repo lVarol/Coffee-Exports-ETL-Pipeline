@@ -46,12 +46,12 @@ Original Data Source: https://view.officeapps.live.com/op/view.aspx?src=https%3A
 - **Flask**: Web framework for the visualization app.
 - **Pandas**: Data manipulation and ETL.
 - **Plotly**: Interactive graph generation.
-- **SQLAlchemy / sqlite3**: Database connectivity (or another SQL backend).
+- **SQLAlchemy / sqlite3**: Database connectivity.
 - **Gunicorn**: Production-grade WSGI server.
 - **systemd**: Process management (service file for Gunicorn).
 - **Nginx**: Reverse proxy server.
 - **Cron**: Scheduling ETL jobs.
-- **Celery (Optional)**: For asynchronous task processing (if used).
+
 
 ## Project Structure
 
