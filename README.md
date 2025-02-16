@@ -21,7 +21,7 @@ Original Data Source: https://view.officeapps.live.com/op/view.aspx?src=https%3A
   - Transforms and cleans the data using Pandas.
   - Loads the cleaned data into a SQL database.
   
-- **Flask Visualization App:**  
+- **Flask Visualization App 📈**  
   - Displays interactive graphs (generated with Plotly) showing coffee export trends.
   - Provides updated visualizations based on ETL data.
   
@@ -67,6 +67,9 @@ Coffee-Exports-ETL-Pipeline/
 ├── README.md                   # This file
 └── venv/                       # Virtual environment with project dependencies
 
+
+```
+
 1. Copy the content above into a file named `README.md` in your project root.
 2. Customize any paths, dates, or details specific to your project.
 3. Commit the README to your repository:
@@ -78,4 +81,4 @@ Coffee-Exports-ETL-Pipeline/
 
 Preliminary figures corresponding to the provisional declared value in the export declaration.
 The FNC publishes these figures for illustrative purposes and they should not be considered an official source for the value of coffee exports.
- The official source is the consolidated and definitive figures regularly published by the DIAN.
+The official source is the consolidated and definitive figures regularly published by the DIAN.
